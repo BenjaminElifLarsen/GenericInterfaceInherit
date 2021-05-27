@@ -61,6 +61,18 @@ namespace GenericInterfaceInherit
         }
     }
 
+    public class OtherRepo2 : ISuperInterface<Other>
+    {
+        public Other All => throw new NotImplementedException();
+
+        public string Type => throw new NotImplementedException();
+
+        public void Add(Other entity)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
     public interface ISuperInterface<T>
     {
         public T All { get; }
